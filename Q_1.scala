@@ -1,7 +1,7 @@
 object Q_1 extends App {
   case class Point(var x: Int, var y: Int) {
 
-    def add(a:Point) = new Point(this.x + a.x, this.y + a.y)
+    def add(a:Point) =  Point(this.x + a.x, this.y + a.y)
 
     def move(x:Int, y:Int):Unit = {
       this.x = this.x + x
